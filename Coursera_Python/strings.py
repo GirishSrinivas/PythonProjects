@@ -86,4 +86,16 @@ print string[4:]    # prints characters starting from 7 up-to end of string
 print string[:]     # prints the entire string
 print "\n"
 
+# using the 'in' operator
+
+titan = "Annie Leonheart"
+print 'n' in titan
+print 'Annie' in titan
+print 'mikasa' in titan
+
+if 'Annie' in titan:
+    print 'Found it!...'
+
+
+
 
