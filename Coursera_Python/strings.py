@@ -96,6 +96,48 @@ print 'mikasa' in titan
 if 'Annie' in titan:
     print 'Found it!...'
 
+# String comparision
+
+if fruit == 'banana':
+    print 'All right, bananas.'
+
+if fruit < 'banana':
+    print 'your word ' + fruit + ' comes before banana'
+elif fruit > 'banana':
+    print 'your word ' + fruit + ' comes after banana'
+else:
+    print 'All right, bananas.'
+
+# String library functions
+
+st = titan.lower()
+print st
+
+ut = titan.upper()
+print ut
+
+ct = titan.capitalize()
+print ct
+
+print dir(titan)    # specifies the different functions that the argument obj can call
+print type(titan)   # specifies the data-type of the argument obj
+pos = titan.find('Leo')     # returns the pos of the first occurrence of the sub-string(case sensitive) else returns -1
+print pos
+
+# find and replace all occurrence of the ols string with the new
+
+rstr = titan.replace('Annie', 'Mikasa')
+print rstr
+
+rstr = titan.replace('n', 'x')
+print rstr
+
+# strip white spaces
+greet = '     Hello Bob     '
+print 'Left strip: ', greet.lstrip()
+print 'Right strip: ', greet.rstrip()
+print 'Strip(): ', greet.strip()
+
 
 
 
