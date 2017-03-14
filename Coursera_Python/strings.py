@@ -1,4 +1,4 @@
-# This program is a sample program to learn strings.
+# This program is a practise program to learn strings.
 
 # example for string concatenation
 str1 = 'Hello'
@@ -138,6 +138,18 @@ print 'Left strip: ', greet.lstrip()
 print 'Right strip: ', greet.rstrip()
 print 'Strip(): ', greet.strip()
 
+# string prefix's returns true or false if the string has the substring
+
+line = 'Annie Leonheart [annieleonheart@titan.military.org]is a titan shifter and also a member of Military Police force'
+print line.startswith('Annie')
+print line.startswith('Loenheart')
+
+stpos = line.find('@')      # finds the character '@' in the string
+print stpos
+
+stp = line.find(']', stpos) # finds the first occurrence of the supplied string from the specified position
+domain = line[stpos + 1:stp]
+print domain
 
 
 
