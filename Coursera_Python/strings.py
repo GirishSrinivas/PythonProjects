@@ -1,156 +1,146 @@
-# This program is a practise program to learn strings.
+"""
+Sample stRING script
+"""
+# This program is a practise program to learn stRINGs.
+# example for stRING concatenation
+STR1 = 'Hello'
+STR2 = 'There'
 
-# example for string concatenation
-str1 = 'Hello'
-str2 = 'There'
+BOB = STR1 + " " + STR2
 
-bob = str1 + " " + str2
+print(BOB)
 
-print bob
-print "\n"
+STR3 = '123'
 
-str3 = '123'
+RES = BOB + " " + STR3
 
-res = bob + " " + str3
+print(RES)
 
-print res
-print "\n"
-
-# example for reading a string from user
-name = raw_input("Enter a name: ")
-print name
-print "\n"
+# example for reading a stRING from user
+NAME = raw_input("Enter a NAME: ")
+print(NAME)
 
 # example for reading a number as it is
-num = input("Enter a number: ")
-print num
+NUM = input("Enter a number: ")
+print(NUM)
 
-print num + 1
-print "\n"
+print(NUM + 1)
 
 # example for reading a number using raw_input()
-num1 = raw_input("Enter a number(raw_input()): ")
-print int(num1) + num
-print "\n"
+NUM1 = raw_input("Enter a number(raw_input()): ")
+print(int(NUM1) + NUM)
 
-# string indexing and len() function
 
-fruit = raw_input("Enter a fruit name: ")
+# stRING INDEXing and len() function
 
-print len(fruit)
-# print fruit[1]
-# print fruit[5-1]
-print fruit[len(fruit)-1]
-print "\n"
+FRUIT = raw_input("Enter a FRUIT NAME: ")
 
-# looping through a string using sentinel/indefinite loop
-print "looping through a string using sentinel/indefinite loop"
-index = 0
+print(len(FRUIT))
+# print(FRUIT[1]
+# print(FRUIT[5-1]
+print(FRUIT[len(FRUIT)-1])
 
-while index < len(fruit):
-    print index, fruit[index]
-    index += 1
-print "\n"
+# looping through a stRING using sentinel/indefinite loop
+print("looping through a stRING using sentinel/indefinite loop")
+INDEX = 0
 
-# looping through a string using for loop
-print "looping through a string using for loop"
+while INDEX < len(FRUIT):
+    print(INDEX, FRUIT[INDEX])
+    INDEX += 1
+print("\n")
 
-for letter in fruit:
-    print letter
-print "\n"
+# looping through a stRING using for loop
+print("looping through a stRING using for loop")
+
+for letter in FRUIT:
+    print(letter)
 
 # looping and counting
-print "counting the frequency of a letter"
-cnt = 0
-for letter in fruit:
+print("counting the frequency of a letter")
+CNT = 0
+for letter in FRUIT:
     if letter == 'a':
-        cnt += 1
-print "a :", cnt
-print "\n"
+        CNT += 1
+print("a :", CNT)
 
-# string slicing
-print "Slicing example"
-string = "Vanilla Sunday"
-print string[0:5]      # prints characters starting from 0 up-to 5(index 5 is not included)
-print string[7:10]     # prints characters starting from 7 up-to 10(index 10 is not included)
-print string[8:20]     # prints characters starting from 8 up-to end of the string even if the end index is off bounds
-print "String length is: ", len(string)
-print "\n"
+# stRING slicing
+print("Slicing example")
+STRING = "Vanilla Sunday"
+print(STRING[0:5])     # prints characters starting from 0 up-to 5(INDEX 5 is not included)
+print(STRING[7:10])    # prints characters starting from 7 up-to 10(INDEX 10 is not included)
+print(STRING[8:20])   # prints string from 8 up-to end of the string even if it is off bounds
+print("stRING length is: ", len(STRING))
 
-# string slicing part - 2
-print "Slicing example 2"
-string = "Vanilla Sunday"
+# stRING slicing part - 2
+print("Slicing example 2")
+STRING = "Vanilla Sunday"
 
-print string[:5]    # prints characters starting from 0 up-to 5(index 5 is not included)
-print string[4:]    # prints characters starting from 7 up-to end of string
-print string[:]     # prints the entire string
-print "\n"
+print(STRING[:5])   # prints characters starting from 0 up-to 5(INDEX 5 is not included)
+print(STRING[4:])    # prints characters starting from 7 up-to end of stRING
+print(STRING[:])     # prints the entire stRING
 
 # using the 'in' operator
 
-titan = "Annie Leonheart"
-print 'n' in titan
-print 'Annie' in titan
-print 'mikasa' in titan
+TITAN = "Annie Leonheart"
+print('n' in TITAN)
+print('Annie' in TITAN)
+print('mikasa' in TITAN)
 
-if 'Annie' in titan:
-    print 'Found it!...'
+if 'Annie' in TITAN:
+    print('Found it!...')
 
-# String comparision
+# stRING comparision
 
-if fruit == 'banana':
-    print 'All right, bananas.'
+if FRUIT == 'banana':
+    print('All right, bananas.')
 
-if fruit < 'banana':
-    print 'your word ' + fruit + ' comes before banana'
-elif fruit > 'banana':
-    print 'your word ' + fruit + ' comes after banana'
+if FRUIT < 'banana':
+    print('your word ' + FRUIT + ' comes before banana')
+elif FRUIT > 'banana':
+    print('your word ' + FRUIT + ' comes after banana')
 else:
-    print 'All right, bananas.'
+    print('All right, bananas.')
 
-# String library functions
+# stRING library functions
 
-st = titan.lower()
-print st
+ST = TITAN.lower()
+print(ST)
 
-ut = titan.upper()
-print ut
+UT = TITAN.upper()
+print(UT)
 
-ct = titan.capitalize()
-print ct
+CT = TITAN.capitalize()
+print(CT)
 
-print dir(titan)    # specifies the different functions that the argument obj can call
-print type(titan)   # specifies the data-type of the argument obj
-pos = titan.find('Leo')     # returns the pos of the first occurrence of the sub-string(case sensitive) else returns -1
-print pos
+print(dir(TITAN))    # specifies the different functions that the argument obj can call
+print(type(TITAN))   # specifies the data-type of the argument obj
+POS = TITAN.find('Leo')  # returns the POS of the first occurrence of the sub-string else returns -1
+print(POS)
 
-# find and replace all occurrence of the ols string with the new
+# find and replace all occurrence of the ols stRING with the new
 
-rstr = titan.replace('Annie', 'Mikasa')
-print rstr
+RSTR = TITAN.replace('Annie', 'Mikasa')
+print(RSTR)
 
-rstr = titan.replace('n', 'x')
-print rstr
+RSTR = TITAN.replace('n', 'x')
+print(RSTR)
 
 # strip white spaces
-greet = '     Hello Bob     '
-print 'Left strip: ', greet.lstrip()
-print 'Right strip: ', greet.rstrip()
-print 'Strip(): ', greet.strip()
+GREET = '     Hello BOB     '
+print('Left strip: ', GREET.lstrip())
+print('Right strip: ', GREET.rstrip())
+print('strip(): ', GREET.strip())
 
 # string prefix's returns true or false if the string has the substring
 
-line = 'Annie Leonheart [annieleonheart@titan.military.org]is a titan shifter and also a member of Military Police force'
-print line.startswith('Annie')
-print line.startswith('Loenheart')
+LINE = 'Annie Leonheart [annieleonheart@TITAN.military.org]' \
+       'is a TITAN shifter and also a member of Military Police force'
+print(LINE.startswith('Annie'))
+print(LINE.startswith('Loenheart'))
 
-stpos = line.find('@')      # finds the character '@' in the string
-print stpos
+STPOS = LINE.find('@')      # finds the character '@' in the string
+print(STPOS)
 
-stp = line.find(']', stpos) # finds the first occurrence of the supplied string from the specified position
-domain = line[stpos + 1:stp]
-print domain
-
-
-
-
+STP = LINE.find(']', STPOS)  # finds the first occurrence of the stRING from the given position
+DOMAIN = LINE[STPOS + 1:STP]
+print(DOMAIN)
