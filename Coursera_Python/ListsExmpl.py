@@ -136,3 +136,9 @@ while True:
 
 SUM = sum(NUMLIST)
 print(SUM)
+
+# strings and lists
+print('strings and lists')
+STR = 'Words with different length'
+WORDS = STR.split()
+print(WORDS)
