@@ -57,6 +57,7 @@ for ele in range(len(LIST3)):
 print('\nLIST1 using enumerate()\n')
 for i, ele in enumerate(LIST1):
     print(LIST1[i])
+    print(ele)
 
 print('\nLIST2 using enumerate()\n')
 for i, ele in enumerate(LIST2):
@@ -65,3 +66,8 @@ for i, ele in enumerate(LIST2):
 print('\nLIST3 using enumerate()\n')
 for i, ele in enumerate(LIST3):
     print(LIST3[i])
+
+# concat multiple lists
+print('\nConcat multiple lists:')
+LIST = LIST1 + LIST2 + LIST3
+print(LIST)
