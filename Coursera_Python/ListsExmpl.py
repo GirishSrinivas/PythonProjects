@@ -3,7 +3,7 @@ Lists Examples
 """
 
 LIST1 = ['hello', 'world', 'python']
-LIST2 = [2, 3, 4, 5, 6, 7]
+LIST2 = [2, 3, 4, 5, 6, 7, 'django']
 LIST3 = ['hello', 24, 99.9]
 
 print(LIST1)
@@ -71,3 +71,68 @@ for i, ele in enumerate(LIST3):
 print('\nConcat multiple lists:')
 LIST = LIST1 + LIST2 + LIST3
 print(LIST)
+
+# slicing in lists
+print('\nSlicing in lists:')
+print(LIST[1:5])
+print(LIST[:5])
+print(LIST[4:])
+print(LIST[:])
+
+# lists methods
+
+print('\nBuiltin lists methods')
+X = list()
+print(type(X))
+print(dir(X))
+X.append('Goutham')
+X.append('Arjun')
+X.append('Girish')
+print('\nBefore sorting:')
+print(X)
+print('\nAfter sorting:')
+X.sort()
+print(X)
+print(max(X))
+
+
+# building a list
+
+print('\nBuilding a list from scratch')
+STUFF = list()  # list constructor to instantiate an empty list
+# empty list can be instantiated by a pair of empty square brackets, i.e. STUFF = []
+
+# adding elements to the list
+for i in range(5):
+    STUFF.append(i)
+
+print(STUFF)
+
+# the 'in' and 'not in' operator
+print(10 in STUFF)
+print(3 in STUFF)
+print(5 not in STUFF)
+
+print(max(STUFF))   # extracts the max element in the list
+print(min(STUFF))   # extracts the min element in the list
+print(sum(STUFF))   # calculates the sum of all the elements in the list
+
+# summing n numbers
+
+print('sum of N numbers')
+NUMLIST = list()
+
+while True:
+    NUM = raw_input('\nEnter a number or press \'done\'')
+
+    if NUM == 'done':
+        break
+    else:
+        try:
+            VAL = float(NUM)
+            NUMLIST.append(VAL)
+        except ValueError:
+            print('Enter proper input')
+
+SUM = sum(NUMLIST)
+print(SUM)
