@@ -5,6 +5,3 @@ To: source@collab.sakaiproject.org
 From: stephen.marquard@uct.ac.za
 Subject: [sakai] svn commit: r39772 - content/branches/
 Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
-hello
-hello
-hello
